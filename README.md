@@ -4,7 +4,7 @@
 
 Rlax Implementation of state-of-the-art model-free reinforcement learning algorithms on Openai gym environments.
 
-# 
+# Some classic Papers and my reviews
 
 | Algorithm                                       | Authors           | Year |
 |-------------------------------------------------|-------------------|------|
@@ -25,3 +25,9 @@ Rlax Implementation of state-of-the-art model-free reinforcement learning algori
 | [AlphaZero](https://arxiv.org/abs/1712.01815)                                      | Silver et al      | 2017 |
 | [A Path Towards Autonomous Machine Intelligence](https://openreview.net/pdf?id=BZ5a1r-kVsf)|LeCun et al| 2022 | 
 | [DreamerV3](https://arxiv.org/pdf/2301.04104.pdf)                                  | Hafner et al      | 2023|	
+
+Please note that this repo is a collection of algorithms I implemented and tested out of my own interest. But I think it could be helpful to share it with others and I'm expecting useful discussions on my implementations. I found that there are no Implementation for JAX, so I think maybe it is challging to make my own one. The repo is presented in a way more like a tutorial and maybe the code is not that clean as I might refactor the code a couple of times. 
+
+# Implementation
+
+## 
