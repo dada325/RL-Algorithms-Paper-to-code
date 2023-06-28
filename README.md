@@ -87,6 +87,10 @@ def epsilon_greedy(q_values, epsilon):
 
 # Q-learning
 
+# openai-gym
+
+# reinforce
+
 # advanced-RL
 
 ## Actor-Critic (AC) / A2C
