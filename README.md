@@ -28,6 +28,35 @@ Rlax Implementation of state-of-the-art model-free reinforcement learning algori
 
 Please note that this repo is a collection of algorithms I implemented and tested out of my own interest. But I think it could be helpful to share it with others and I'm expecting useful discussions on my implementations. I found that there are no Implementation for JAX, so I think maybe it is challging to make my own one. The repo is presented in a way more like a tutorial and maybe the code is not that clean as I might refactor the code a couple of times. 
 
-# Implementation
+# Content
+
+# Table of Contents
+
+1. [Introduction to Rlax and its integration with JAX](#intro-rlax-jax) 🤝
+2. [Basic building blocks of an RL algorithm](#basic-rl) 🚀
+3. [Implementing Q-learning using Rlax and JAX](#q-learning) 📝
+    - [Deep Q Networks (DQN)](#dqn)
+    - [Experience Replay](#experience-replay)
+    - [Target Networks](#target-networks)
+4. [Experimenting with different environments using OpenAI Gym](#openai-gym) 🧪
+5. [Implementing policy gradients (REINFORCE)](#reinforce) 🤖
+6. [Exploration strategies in RL](#exploration-strategies) 🎲
+7. [Fine-tuning and optimizing RL algorithms](#fine-tuning) 📈
+8. [Implementing advanced RL algorithms](#advanced-rl) 🚀
+    - [Actor-Critic (AC/A2C)](#ac-a2c) 🧮
+    - [Soft Actor-Critic (SAC)](#sac) 📈
+    - [Deep Deterministic Policy Gradient (DDPG)](#ddpg) 🤖
+    - [Twin Delayed DDPG (TD3)](#td3) 🧮
+    - [Proximal Policy Optimization (PPO)](#ppo) 📈
+    - [QT-Opt (including Cross-entropy (CE) Method)](#qt-opt) 🎲
+    - [PointNet](#pointnet) 🧮
+    - [Transporter](#transporter) 🤖
+    - [Recurrent Policy Gradient](#recurrent-policy-gradient) 📈
+    - [Soft Decision Tree](#soft-decision-tree) 🧮
+    - [Probabilistic Mixture-of-Experts](#mixture-of-experts) 🤖
+    - [QMIX](#qmix) 🧮
+9. [Best practices for training stable and robust agents](#best-practices) 🤖
+10. [Troubleshooting and debugging RL algorithms](#troubleshooting) 🧪
+
 
 ## 
