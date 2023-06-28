@@ -71,5 +71,6 @@ def epsilon_greedy(q_values, epsilon):
     else:
         action = np.argmax(q_values)
     return action
+```
 
 # Basic-RL
