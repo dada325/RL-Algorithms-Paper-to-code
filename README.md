@@ -60,7 +60,7 @@ Please note that this repo is a collection of algorithms I implemented and teste
 
 
 # Intro-rlax-jax
-Let's start with an example: Suppose you want to implement the ϵ\epsilon-greedy algorithm for a simple reinforcement learning problem. ϵ\epsilon-greedy is a simple method to balance exploration and exploitation by choosing between a random action and the action currently believed to be the best with a certain probability.
+Let's start with an example: Suppose you want to implement the ϵ-greedy algorithm for a simple reinforcement learning problem. ϵ-greedy is a simple method to balance exploration and exploitation by choosing between a random action and the action currently believed to be the best with a certain probability.
 
 In Python, you might write this using NumPy like so:
 
