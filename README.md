@@ -59,4 +59,6 @@ Please note that this repo is a collection of algorithms I implemented and teste
 10. [Troubleshooting and debugging RL algorithms](#troubleshooting) 🧪
 
 
-## 
+# Intro-rlax-jax
+
+# Basic-RL
