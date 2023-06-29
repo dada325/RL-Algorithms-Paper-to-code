@@ -89,7 +89,7 @@ def epsilon_greedy(q_values, epsilon):
 
 # openai-gym
 
-# RL Algorithms for Different Environments
+Gymnasium Envs (RL Algorithms for Different Environments)
 
 ## Classic Control
 Classic Control is simple,  simpler RL methods such as Q-learning and Policy Gradient methods may works well, the state and action spaces are relatively small and the physics are deterministic.
