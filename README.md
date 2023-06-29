@@ -110,7 +110,7 @@ These environments are more complex, requiring RL methods such as DDPG or PPO.
 ## Toy Text
 These environments have simple, discrete state and action spaces, so tabular methods like Q-learning may be effective, but deep RL methods can also be applied here.
 
-- **Blackjack**: Q-learning or Monte Carlo Control (perfect information game)
+- **Blackjack**: Monte Carlo Control or Q-Learning (eposidic, perfect information game)
 - **Taxi**: Q-learning or SARSA (small discrete state and action space)
 - **Cliff Walking**: Q-learning or SARSA (gridworld environment with discrete states and actions)
 - **Frozen Lake**: Q-learning or Value Iteration (gridworld environment with discrete states and actions)
