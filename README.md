@@ -89,6 +89,44 @@ def epsilon_greedy(q_values, epsilon):
 
 # openai-gym
 
+# RL Algorithms for Different Environments
+
+## Classic Control
+Classic Control is simple,  simpler RL methods such as Q-learning and Policy Gradient methods may works well, the state and action spaces are relatively small and the physics are deterministic.
+
+- **Acrobot**: Q-learning or SARSA (small discrete action space)
+- **Cart Pole**: DQN (small discrete action space and continuous state space)
+- **Mountain Car Continuous**: DDPG (continuous action space)
+- **Mountain Car**: DQN (discrete action space)
+- **Pendulum**: DDPG (continuous action space)
+
+## Box2D
+These environments are more complex, requiring RL methods such as DDPG or PPO.
+
+- **Bipedal Walker**: PPO or TRPO (complex task with continuous action space)
+- **Car Racing**: PPO or A3C (complex task with high dimensional state space)
+- **Lunar Lander**: DQN or DDPG (discrete and continuous versions available)
+
+## Toy Text
+These environments have simple, discrete state and action spaces, so tabular methods like Q-learning may be effective, but deep RL methods can also be applied here.
+
+- **Blackjack**: Q-learning or Monte Carlo Control (perfect information game)
+- **Taxi**: Q-learning or SARSA (small discrete state and action space)
+- **Cliff Walking**: Q-learning or SARSA (gridworld environment with discrete states and actions)
+- **Frozen Lake**: Q-learning or Value Iteration (gridworld environment with discrete states and actions)
+
+## MuJoCo
+These are complex, continuous control tasks that typically require advanced methods like DDPG, TRPO, or PPO.
+
+- **Ant, Half Cheetah, Hopper, Humanoid Standup, Humanoid, Inverted Double Pendulum, Inverted Pendulum, Reacher, Swimmer, Pusher, Walker2D**: DDPG, TRPO or PPO (complex tasks with continuous action spaces)
+
+## Atari
+These are complex tasks with high-dimensional state spaces (if you use the raw pixels as input) that typically require deep RL methods. DQN was specifically developed for these kinds of tasks.
+
+- **All Atari games**: DQN or its variations (Double DQN, Dueling DQN), or policy gradient methods like A3C or PPO (reason: high dimensional state space with discrete actions)
+
+
+
 # reinforce
 
 # advanced-RL
