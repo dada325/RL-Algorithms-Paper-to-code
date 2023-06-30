@@ -142,7 +142,7 @@ Multiple versions of SAC are implemented.
 
 ### SAC Version 1
 
-**File:** `sac.py` - Using state-value function.
+**File:** `sac.ipynb` - Using state-value function.
 
 **Reference Paper:** [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/pdf/1801.01290.pdf)
 
