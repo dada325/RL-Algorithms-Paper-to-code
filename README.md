@@ -4,7 +4,7 @@
 
 Rlax Implementation of state-of-the-art model-free reinforcement learning algorithms on Openai gym environments.
 
-# Some classic Papers and my reviews
+## Some classic Papers and my reviews
 
 | Algorithm                                       | Authors           | Year |Review|
 |-------------------------------------------------|-------------------|------|------|
@@ -27,6 +27,19 @@ Rlax Implementation of state-of-the-art model-free reinforcement learning algori
 | [DreamerV3](https://arxiv.org/pdf/2301.04104.pdf)                                  | Hafner et al      | 2023|	 [Review]() |
 
 Please note that this repo is a collection of algorithms I implemented and tested out of my own interest. But I think it could be helpful to share it with others and I'm expecting useful discussions on my implementations. I found that there are no Implementation for JAX, so I think maybe it is challging to make my own one. The repo is presented in a way more like a tutorial and maybe the code is not that clean as I might refactor the code a couple of times. 
+
+### High level Overview of the Algorithms
+
+| Generation | Method | Description | Key Idea |
+|------------|--------|-------------|----------|
+| 1 | Tabular methods (Q-learning, SARSA) | Use a table to store the expected reward for each action in each state. | Simple and effective but do not scale well to large state spaces. |
+| 2 | Function approximation | Represent the Q-function as a parameterized function. (such as a linear function or a neural network.) | Allows RL to scale to much larger state spaces. |
+| 3 | Policy gradients (REINFORCE) | Directly learn a policy that specifies which action to take in each state. The REINFORCE algorithm is a foundational policy gradient method that uses the gradient of the expected reward to improve the policy. | Use the gradient of the expected reward to improve the policy. |
+| 4 | Actor-Critic methods (A2C, A3C) | Combine value-based methods and policy-based methods. | Use a critic to estimate the value of actions, and an actor to improve the policy based on the critic's estimates. |
+| 5 | Trust Region methods (TRPO, PPO) | Add an additional constraint to the learning process to ensure the policy doesn't change too much in one step. | Makes the learning process more stable. |
+| 6 | Distributional RL (C51, QR-DQN) | Aim to learn the full distribution of possible rewards. | Provides more information and can lead to better policies. |
+| 7 | Model-based RL | First learn a model of the environment, then use this model to plan and make decisions. | More sample-efficient than model-free methods, but learning an accurate model can be challenging. |
+
 
 # Content
 
