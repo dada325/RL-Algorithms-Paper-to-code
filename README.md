@@ -22,7 +22,7 @@ Rlax Implementation of state-of-the-art model-free reinforcement learning algori
 
 # Table of Contents
 
-1. [Introduction to Rlax and its integration with JAX](#intro-rlax-jax) 
+1. [Introduction](#intro) 
 2. [Basic building blocks of an RL algorithm](#basic-rl) 
 3. [Implementing Q-learning using Rlax and JAX](#q-learning) 
     - [Deep Q Networks (DQN)](#dqn)
@@ -50,7 +50,7 @@ Rlax Implementation of state-of-the-art model-free reinforcement learning algori
 11. [Key Paper in RL](#Key_Papers_in_Deep_RL)
 
 
-# Intro-rlax-jax
+# Intro
 Let's start with an example: Suppose you want to implement the ϵ-greedy algorithm for a simple reinforcement learning problem. ϵ-greedy is a simple method to balance exploration and exploitation by choosing between a random action and the action currently believed to be the best with a certain probability.
 
 In Python, you might write this using NumPy like so:
