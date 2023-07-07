@@ -64,7 +64,7 @@ def epsilon_greedy(q_values, epsilon):
 
 # Q-learning
 
-# openai-gym
+# Openai-gym
 
 Gymnasium Envs (RL Algorithms for Different Environments)
 
@@ -106,71 +106,13 @@ These are complex tasks with high-dimensional state spaces (if you use the raw p
 
 # reinforce
 
-# advanced-RL
+# Advanced-RL
 
 ## Actor-Critic (AC) / A2C
 
-**File:** `ac.py` - Extensible AC/A2C, easy to change to be DDPG, etc. A very extensible version of vanilla AC/A2C, supporting for all continuous/discrete deterministic/non-deterministic cases.
-
-
-## Soft Actor-Critic (SAC)
-
-Multiple versions of SAC are implemented.
-
-### SAC Version 1
-
-**File:** `sac.ipynb` - Using state-value function.
-
-**Reference Paper:** [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/pdf/1801.01290.pdf)
-
-### SAC Version 2
-
-**File:** `sac_v2.py` - Using target Q-value function instead of state-value function.
-
-**Reference Paper:** [Soft Actor-Critic Algorithms and Applications](https://arxiv.org/pdf/1812.05905.pdf)
-
-### SAC Discrete
-
-**File:** `sac_discrete.py` - For discrete action space.
-
-**Reference Paper:** [Soft Actor-Critic for Discrete Action Settings](https://arxiv.org/abs/1910.07207)
-
-### SAC Discrete PER
-
-**File:** `sac_discrete_per.py` - For discrete action space, and with prioritized experience replay (PER).
-
-## Deep Deterministic Policy Gradient (DDPG)
-
-**File:** `ddpg.py` - Implementation of DDPG.
-
-## Twin Delayed DDPG (TD3)
-
-**File:** `td3.py` - Implementation of TD3.
-
-**Reference Paper:** [Addressing Function Approximation Error in Actor-Critic Methods](https://arxiv.org/pdf/1802.09477.pdf)
-
-## Proximal Policy Optimization (PPO)
-
-For continuous environments, two versions are implemented:
-
-**Version 1:** `ppo_continuous.py` and `ppo_continuous_multiprocess.py`
-
-**Version 2:** `ppo_continuous2.py` and `ppo_continuous_multiprocess2.py`
-
-For discrete environment:
-
-**File:** `ppo_gae_discrete.py` - With Generalized Advantage Estimation (GAE)
-
-## DQN
-
-**File:** `dqn.py` - A simple DQN.
-
-
-## Soft Decision Tree as function approximator for PPO
-
 **File:** `sdt_ppo_gae_discrete.py` - Replace the network layers of policy in PPO to be a Soft Decision Tree, for achieving explainable RL.
 
-**Reference Paper:** [CDT: Cascading Decision Trees for Explainable Reinforcement Learning](https://arxiv.org/pdf/1910.07207)
+
 
 
 # Key_Papers_in_Deep_RL
