@@ -24,7 +24,7 @@ Rlax Implementation of state-of-the-art model-free reinforcement learning algori
 
 1. [Introduction](#intro) 
 2. [Basic building blocks of an RL algorithm](#basic-rl) 
-3. [Implementing Q-learning using Rlax and JAX](#q-learning) 
+3. [Implementing Q-learning](#q-learning) 
     - [Deep Q Networks (DQN)](#dqn)
     - [Experience Replay](#experience-replay)
     - [Target Networks](#target-networks)
@@ -34,17 +34,11 @@ Rlax Implementation of state-of-the-art model-free reinforcement learning algori
 7. [Fine-tuning and optimizing RL algorithms](#fine-tuning) 
 8. [Implementing advanced RL algorithms](#advanced-rl) 
     - [Actor-Critic (AC/A2C)](#ac-a2c) 
-    - [Soft Actor-Critic (SAC)](#sac) 
     - [Deep Deterministic Policy Gradient (DDPG)](#ddpg) 
-    - [Twin Delayed DDPG (TD3)](#td3) 
+    - [Twin Delayed DDPG (TD3)](#td3)
+    - [Soft Actor-Critic (SAC)](#sac) 
     - [Proximal Policy Optimization (PPO)](#ppo) 
-    - [QT-Opt (including Cross-entropy (CE) Method)](#qt-opt) 
-    - [PointNet](#pointnet) 
-    - [Transporter](#transporter) 
-    - [Recurrent Policy Gradient](#recurrent-policy-gradient) 
-    - [Soft Decision Tree](#soft-decision-tree) 
-    - [Probabilistic Mixture-of-Experts](#mixture-of-experts) 
-    - [QMIX](#qmix) 
+
 9. [Best practices for training stable and robust agents](#best-practices) 
 10. [Troubleshooting and debugging RL algorithms](#troubleshooting) 
 11. [Key Paper in RL](#Key_Papers_in_Deep_RL)
@@ -64,15 +58,7 @@ def epsilon_greedy(q_values, epsilon):
     return action
 ```
 
-Now we can do the same with the following:
 
-```python
-import jax
-import rlax
-
-def epsilon_greedy(q_values, epsilon):
-    return rlax.epsilon_greedy(epsilon).sample(seed, q_values)
-```
 
 # Basic-RL
 
@@ -179,27 +165,6 @@ For discrete environment:
 
 **File:** `dqn.py` - A simple DQN.
 
-## QT-Opt
-
-Two versions are implemented here. PointNet for landmarks generation from images with unsupervised learning is implemented here. This method is also used for image-based reinforcement learning as a SOTA algorithm, called Transporter.
-
-**Original Paper:** Unsupervised Learning of Object Landmarksthrough Conditional Image Generation
-
-**Paper for RL:** Unsupervised Learning of Object Keypointsfor Perception and Control
-
-## Recurrent Policy Gradient
-
-**Files:**
-
-- `rdpg.py`: DDPG with LSTM policy.
-- `td3_lstm.py`: TD3 with LSTM policy.
-- `sac_v2_lstm.py`: SAC with LSTM policy.
-- `sac_v2_gru.py`: SAC with GRU policy.
-
-**References:**
-
-- Memory-based control with recurrent neural networks
-- Sim-to-Real Transfer of Robotic Control with Dynamics Randomization
 
 ## Soft Decision Tree as function approximator for PPO
 
@@ -207,40 +172,6 @@ Two versions are implemented here. PointNet for landmarks generation from images
 
 **Reference Paper:** [CDT: Cascading Decision Trees for Explainable Reinforcement Learning](https://arxiv.org/pdf/1910.07207)
 
-## Probabilistic Mixture-of-Experts (PMOE)
-
-PMOE uses a differentiable multi-modal Gaussian distribution to replace the standard unimodal Gaussian```markdown
-distribution for policy representation.
-
-**Files:**
-- `pmoe_sac.py`: Based on off-policy SAC.
-- `pmoe_ppo.py`: Based on on-policy PPO.
-
-**Reference Paper:** [Probabilistic Mixture-of-Experts for Efficient Deep Reinforcement Learning](https://arxiv.org/abs/1910.07207)
-
-## QMIX
-
-**File:** `qmix.py` - A fully cooperative multi-agent RL algorithm, demo environment using pettingzoo.
-
-**Reference Paper:** [QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning](http://proceedings.mlr.press/v80/rashid18a.html)
-
-## Phasic Policy Gradient (PPG)
-
-**Status:** To Do
-
-**Reference Paper:** [Phasic Policy Gradient](https://arxiv.org/abs/2009.04416)
-
-## Maximum a Posteriori Policy Optimisation (MPO)
-
-**Status:** To Do
-
-**Reference Paper:** [Maximum a Posteriori Policy Optimisation](https://arxiv.org/abs/1806.06920)
-
-## Advantage-Weighted Regression (AWR)
-
-**Status:** To Do
-
-**Reference Paper:** [Advantage-Weighted Regression: Simple and Scalable Off-Policy Reinforcement Learning](https://arxiv.org/abs/1910.00177)
 
 # Key_Papers_in_Deep_RL
 
