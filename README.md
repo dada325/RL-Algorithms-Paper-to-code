@@ -104,7 +104,7 @@ These are complex tasks with high-dimensional state spaces (if you use the raw p
 
 
 
-# reinforce
+# REINFORCE
 
 # Advanced-RL
 
