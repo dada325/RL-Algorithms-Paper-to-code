@@ -24,7 +24,7 @@ Rlax Implementation of state-of-the-art model-free reinforcement learning algori
 
 1. [Introduction](#intro) 
 2. [Basic building blocks of an RL algorithm](#basic-rl) 
-3. [Implementing Q-learning](#q-learning) 
+3. [Implementing Deep Q-Network](#q-learning) 
     - [Deep Q Networks (DQN)](#dqn)
     - [Experience Replay](#experience-replay)
     - [Target Networks](#target-networks)
