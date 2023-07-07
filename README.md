@@ -110,7 +110,7 @@ These are complex tasks with high-dimensional state spaces (if you use the raw p
 
 ## Actor-Critic (AC) / A2C
 
-**File:** `sdt_ppo_gae_discrete.py` - Replace the network layers of policy in PPO to be a Soft Decision Tree, for achieving explainable RL.
+**File:** `.py` 
 
 
 
