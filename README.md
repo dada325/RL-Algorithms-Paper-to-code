@@ -1,4 +1,4 @@
-# RL-Algorithms-JAX
+# RL-Algorithms
 
 # About
 
